@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int sum(int a,int b){
+    return a+b;
+}
+int main(){
+    int a,b;
+    cin >> a >>b;
+    int result=sum(a,b);
+    cout << "the sum is:" << result;
+
+    return 0;
+}
