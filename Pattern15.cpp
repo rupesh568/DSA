@@ -5,8 +5,15 @@ void pattern15(int n){
         for(int j=0;j<n-i-2;j++){
             cout << " ";
         }
-        for(char j='A';j<='A'+2*i;j++){
-            cout << j ;
+        char ch='A';
+        int breakPoint=(2*i+1)/2;
+        for(int j=0;j<=2*i;j++){
+            cout << ch;
+            if(j<=breakPoint){
+                ch++;
+            }else{
+                ch--;
+            }
         }
         for(int j=0;j<n-i-2;j++){
             cout << " ";
