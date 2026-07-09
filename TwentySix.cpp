@@ -16,7 +16,10 @@ int main(){
     int cnt=st.count(5);
     cout << cnt << endl;
 
-    
+    auto it1=st.find(4);
+    auto it2=st.find(5);
+
+    st.erase(it1,it2);
     
 
     
