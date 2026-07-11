@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void Recursion7(int i,int N){
+void Recursion7(int i,int N){ //To print number from N to 1 using backtracking recursion
     if(i>N){
         return;
     }
