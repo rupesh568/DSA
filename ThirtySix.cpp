@@ -10,7 +10,7 @@ void findDivisors(int N){
     //     i++;
     // }
     //we can do it using for loop as well ;
-    for(int i=1;i<=sqrt(N);i++){
+    for(int i=1;i*i<=N;i++){
         if(N%i==0){
             v.push_back(i);
             if((N/i)!=i){
