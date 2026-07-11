@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int Recursion9(int N){
+int Recursion9(int N){ //printing sum from 1 to N without using parameter but using function
     if(N==0){
       return 0;
     }
