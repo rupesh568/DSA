@@ -6,6 +6,9 @@ void Recursion11(int n,int i,int arr[]){
     
     
     if(i>=n-i-1){
+        for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+        }
         return;
     }
     swap(arr[i],arr[n-i-1]);
@@ -22,9 +25,9 @@ int main(){
         cin >> arr[i];
     }
     Recursion11(N,0,arr);
-    for(int i=0;i<N;i++){
-        cout << arr[i] << " ";
-    }
+    // for(int i=0;i<N;i++){
+    //     cout << arr[i] << " ";
+    // }
 
 
     return 0;

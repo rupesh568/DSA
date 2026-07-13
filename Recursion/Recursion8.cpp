@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 //Parameterised Recursion for printing the sum of number;
-void Recursion7(int val,int i,int N){
+int Recursion7(int val,int i,int N){
     int sum=val;
     
     if(i>N){
