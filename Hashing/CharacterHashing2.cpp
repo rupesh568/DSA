@@ -2,12 +2,12 @@
 using namespace std;
 
 int main(){
-    string str="rupesh";
+    string str="rupeshhhh";
 
     int strLen=str.size();
-    int Hash[26]={0};
+    int Hash[256]={0};
     for(int i=0;i<strLen;i++){
-        Hash[str[i]-'a']+=1;
+        Hash[str[i]]+=1;
     }
     //fetching or queries;
     int q;
@@ -15,7 +15,7 @@ int main(){
     while(q--){
         char ch;
         cin >> ch;
-        cout << Hash[ch-'a'] << endl;
+        cout << Hash[ch] << endl;
     }
 
     return 0;
