@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+int hashh[100000];
 int main(){
     
     int N;
@@ -11,9 +11,9 @@ int main(){
 
     }
     //prestoring;
-    int hash[13]={0};
+    // int hash[100000]={0}; //it is used untill 10^6 only this inside int main() above it use it globally only but above it we need to declare it globally
     for(int i=0;i<N;i++){
-        hash[arr[i]]+=1;
+        hashh[arr[i]]+=1;
     }
 
     //Fetching or printing the number of each elements of array exisiting how many times;
@@ -22,7 +22,7 @@ int main(){
     while(q--){
         int number;
         cin >> number;
-        cout << hash[number] << endl;
+        cout << hashh[number] << endl;
     }
 
     return 0;
