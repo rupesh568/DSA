@@ -5,18 +5,20 @@ int main(){
     int N;
     cin >> N;
     int arr[N];
+    map<int,int>mpp;
     for(int i=0;i<N;i++){
         cin >> arr[i];
+        mpp[arr[i]]++;   //this is simple way of doing it;
     }
 
     //precompute
-    map<int,int>mpp;
-    for(int i=0;i<N;i++){
-        mpp[arr[i]]+=1;
-    }
+    // map<int,int>mpp;
+    // for(int i=0;i<N;i++){
+    //     mpp[arr[i]]+=1;
+    // } ,it can be written simply as well;
    for(auto it:mpp){
         cout << it.first << " ," << it.second << endl;
-   }
+   } // can be itererated as well;
 
     //queries;
     int q;
