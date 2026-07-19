@@ -4,13 +4,25 @@
         {
             "label": "Compile and Run",
             "type": "shell",
-            "command": "cmd",
+            "command": "g++",
             "args": [
-                "/c",
-                "g++ -std=c++17 \"${file}\" -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\" < input.txt > output.txt"
+                "-std=c++17",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}.exe",
+                "&&",
+                "${fileBasenameNoExtension}.exe",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/c"]
+                }
             },
             "group": {
                 "kind": "build",
