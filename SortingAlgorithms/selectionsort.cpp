@@ -14,7 +14,10 @@ void selectionSort(int arr[],int N){
             }
             
         }
-        swap(arr[i],arr[k]);
+        int temp=arr[i];
+        arr[i]=arr[k];    //swap using third variable is done here;
+        arr[k]=temp;
+        
         
         
         
