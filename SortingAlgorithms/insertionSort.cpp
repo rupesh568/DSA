@@ -1,34 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 void insertionSort(int arr[],int N){
-    //Insertion sort;
-    int i=0;
-    while(i<=N){
-        if(arr[i]>arr[i+1]){
-            swap(arr[i],arr[i+1]);
-            i=0;
-        }else{
-            i+=1;
+    //Insertion sort;is the sorting algorithm in which elements are inserted in the correct position+
+    //Time complexity :Best case:O(N) if the array is already sorted but O(N^2) for worst and average cases;
+    for(int i=0;i<N;i++){
+        int j=i;
+        while (j>0 && arr[j-1]>arr[j])
+        {
+            int temp=arr[j-1];
+            arr[j-1]=arr[j];
+            arr[j]=temp;
+            j--;
         }
         
     }
-    // for(int i=0;i<N;i++){
-    //     if(arr[i]>arr[i+1]){
-    //         swap(arr[i],arr[i+1]);
-    //         i=0;
-    //         // for(int j=0;j<N;j++){
-    //         //     if(arr[j]>arr[j+1]){
-    //         //         swap(arr[j],arr[j+1]);
-    //         //     }
-    //         // }
-    //     }
-        
-    // }
-
-
-
-
-
 
     for(int i=0;i<N;i++){
         cout << arr[i];
@@ -39,7 +24,8 @@ int main(){
     cin >> N;
     int arr[N];
     for(int i=0;i<N;i++){
-        cin >> arr[N];
+        cin >> arr[i];
     }
+    insertionSort(arr,N);
     return 0;
 }
