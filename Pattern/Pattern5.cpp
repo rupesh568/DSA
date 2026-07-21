@@ -9,7 +9,7 @@ void pattern5(int n){
     }
 }
 int main(){
-    cout << "enter the value of n:";
+    // cout << "enter the value of n:";
     int n;
     cin >> n;
     pattern5(n);

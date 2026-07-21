@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std; //Both Time and space complexity both are :O(n) 
+using namespace std;
 void Recursion3(int count){
     if(count==5){
         return;

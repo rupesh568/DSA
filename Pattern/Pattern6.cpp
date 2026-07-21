@@ -15,7 +15,7 @@ void pattern6(int n){
     }
 }
 int main(){
-    cout << "enter the value of num:";
+    // cout << "enter the value of num:";
     int n;
     cin >> n;
     pattern6(n);
