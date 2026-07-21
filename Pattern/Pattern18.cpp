@@ -30,7 +30,7 @@ void pattern18(int n){
 }
 
 int main(){
-    cout << "enter the value of number:";
+    // cout << "enter the value of number:";
     int n;
     cin >> n;
     pattern18(n);

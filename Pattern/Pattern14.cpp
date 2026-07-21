@@ -10,7 +10,7 @@ void pattern14(int n){
 }
 
 int main(){
-    cout << "Enter the value of number:";
+    // cout << "Enter the value of number:";
     int n;
     cin >> n;
     pattern14(n);
