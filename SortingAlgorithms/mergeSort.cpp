@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//Time complexity:O(N.log base 2 N) and space complexity:O(N)
 void ms(int arr[],int low,int mid,int high){
     vector<int>v;
     int left=low;
