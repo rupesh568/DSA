@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-//list is a similar as vector the only difference is that we can push the value from front as well//
+//list is a similar as vector the only difference 
+//is that we can push the value from front as well//
 //all other functions are same as vector;
 
 int main(){

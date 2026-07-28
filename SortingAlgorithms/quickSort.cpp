@@ -2,30 +2,26 @@
 using namespace std;
 void quickSort(int arr[],int low,int high){
     int N=arr.size();
-    if(N==1){
+    if(low<=high){
         return;
     }
-    int temp=arr[0];
-    int j=0;
-    int pivotElemetn=arr[0];
+    int i=0;
+    int temp=arr[i];
+    int pivotElemet=arr[i];
     for(int i=0;i<N;i++){
-        if(arr[0]<arr[i+1]){
-            j=i+1;
-            arr[j]=temp;
-        }
-        for(int i=0;i<N;i++){
-            j=0;
-            int k=j+1;
-            if(arr[i]<arr[j]){
-                arr[j]=arr[i];
-                j++;
+        for(int j=high;j>0;j--){
+            if(i>j){
+                return;
             }
-            if(arr[i]>arr[j]){
-                arr[k]=arr[i];
-                k++;
-            }
+            if(arr[i]>arr[0] && arr[j]<arr[0]){
+            swap(arr[i],arr[j]);
         }
+        }
+        
+        
+        
     }
+    
     quickSort(arr,low,j-1);
     quickSort(arr,j+1,high);
 }
