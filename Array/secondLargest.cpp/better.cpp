@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//This is better solution but not optimum because here the for loop will run twice and each loop has time complexity of O(N).SO IT WILL BE O(2N);
 void secondLargest(int arr[],int N){
     int largest=arr[0];
     int secondLargest=-1;
