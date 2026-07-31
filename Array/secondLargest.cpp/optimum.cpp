@@ -2,18 +2,25 @@
 using namespace std;
 void secondLargest(int arr[],int N){
     int largest=arr[0];
-    int secondLargest=-1;
+    int secondLargest=INT_MIN;
     for(int i=1;i<N;i++){
         if(arr[i]>largest){
+            secondLargest=largest;
             largest=arr[i];
             
             
+            
         }
-        if(arr[i-1]>secondLargest && arr[i-1]!=largest){
-                secondLargest=arr[i-1];
+        if(arr[i]>secondLargest && arr[i]!=largest){
+                secondLargest=arr[i];
         }
-    }   
-    cout << secondLargest;
+    } 
+    if(secondLargest==INT_MIN){
+        cout << -1;
+    }else{
+        cout << secondLargest;
+    } 
+    
 }
 int main(){
     int N;
