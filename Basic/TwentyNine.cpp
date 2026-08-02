@@ -1,9 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 //map:it is a type of data structure or container which is used to store value in key and values form where all the keys are unique but values can be duplicate.and it can be of any dataypes like integer,character,doble ,pair etc and map stored keys in sorted order;
-
-
 int main(){
     map<int,int>mpp;
     map<int,pair<int,int>>mpp1;

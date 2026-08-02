@@ -21,6 +21,4 @@ int main(){
 
     st.erase(it1,it2);
     
-
-    
 }
