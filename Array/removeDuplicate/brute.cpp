@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+//space complexity is :O(N)
+//Time complexity is :O(NLOGN)+O(N);
 void removeDuplicate(int arr[],int N){
     int count=0;
     set<int>st;
