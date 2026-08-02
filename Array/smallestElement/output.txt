@@ -1,0 +1,1 @@
+smallestElement:1and secondSmallestElement:2
