@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//space complexity is :O(N) and time complexity is:
 void moveZero(int arr[],int N){
     vector<int>v;
     for(int i=0;i<N;i++){
