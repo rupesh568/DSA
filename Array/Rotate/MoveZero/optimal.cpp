@@ -1,16 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 void moveZero(int arr[],int N){
-    for(int i=0;i<N;i++){
+    int i=0;
+    while(i<N){
         if(arr[i]==0){
             int temp=arr[i];
-            while(i<N){
-                arr[i]=arr[i+1];
-                i++;
+            int j=i;
+            while(j<N){
+                arr[j]=arr[j+1];
+                j++;
             }
             arr[N-1]=temp;
             
+   
             
+        }
+        if(arr[i]==0){
+                i==0;
+        }else{
+            i++;
         }
     }
     for(int i=0;i<N;i++){
